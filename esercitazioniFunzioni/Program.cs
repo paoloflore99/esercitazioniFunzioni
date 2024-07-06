@@ -8,6 +8,41 @@ namespace esercitazioniFunzioni
         static void Main(string[] args)
         {
             {
+                //creo un array di nomi e vedo se ce il nome inserito 
+                string[] s = { "paolo", "flore", "anna", "franco" };
+                Console.WriteLine("inserisci un nome ");
+                string r;
+                r = Console.ReadLine();
+                for (int i = 0; i < s.Length; i++)
+                { 
+                    if (s[i] == r)
+                    {
+                        Console.WriteLine($"puoi entrare {r}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("non puoi entrare ");
+                        
+                    }
+                }
+
+            }
+            {
+                //chiedo di di mettere un numero se pari stampo il numereo , se dispari stampo quello sucessivo
+                int p;
+                Console.Write("inserisci numero ");
+                p = Convert.ToInt32(Console.ReadLine());
+                if (p % 2 == 1 )
+                {
+                    Console.WriteLine($"il numero {p} adesso e {p + 1} ");
+                }
+                else
+                {
+                    Console.WriteLine($"il numero{p} inserito e pari ");
+                }
+            }
+
+            {
                 //calcolare la somma e la media dei numeri fra 2 e 10 
                 int a = 8;
                 int[] b = new int[a];
