@@ -8,13 +8,32 @@ namespace esercitazioniFunzioni
         static void Main(string[] args)
         {
             {
+                void s()
+                {
+                    Console.Write("( ");
+
+                }
+                void acc(ref int[] e)
+                {
+                    s();
+                    for (int i = 0; i < e.Length; i++)
+                    {
+                        e[i] = i;
+                        Console.Write(e[i]);
+                    }
+                    Console.Write(" ) ");
+                }
+                int[] t = { 1, 2, 3 , 4, 5, 6,6,7, 8,9,6,4};
+                acc(ref t);
+            }
+            {
                 int nome(int a, int b)
                 {
                     int risultato = a + b;
 
                     return risultato;
                 }
-                int c = nome(1, 2);
+                int c = nome(10, 20);
                 Console.WriteLine(c);
             }
             {
