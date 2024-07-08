@@ -8,21 +8,54 @@ namespace esercitazioniFunzioni
         static void Main(string[] args)
         {
             {
+                int nome(int a, int b)
+                {
+                    int risultato = a + b;
+
+                    return risultato;
+                }
+                int c = nome(1, 2);
+                Console.WriteLine(c);
+            }
+            {
+                //chiedo di inserire 6 volte un valore , se il valore e disparo lo inserisco nell'array
+                //se il valore e pari lascio 0 
+                int b = 6;
+                int[] a = new int[b];
+                int t ;
+                for (int i = 0; i < b; i++)
+                {
+                    Console.WriteLine("inserisci un valore");
+                    t = Convert.ToInt32(Console.ReadLine());
+                    if (t % 2 == 1)
+                    {
+                        a[i] = t; 
+                    }
+                }
+                for (int i = 0;i < b; i++)
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+            {
                 //creo un array di nomi e vedo se ce il nome inserito 
                 string[] s = { "paolo", "flore", "anna", "franco" };
                 Console.WriteLine("inserisci un nome ");
                 string r;
+                int i;
                 r = Console.ReadLine();
-                for (int i = 0; i < s.Length; i++)
+                for ( i = 0; i < s.Length; i++)
                 { 
                     if (s[i] == r)
                     {
                         Console.WriteLine($"puoi entrare {r}");
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("non puoi entrare ");
-                        
+                        break;
+
                     }
                 }
 
