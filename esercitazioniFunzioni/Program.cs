@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization.Formatters;
 
 namespace esercitazioniFunzioni
@@ -7,6 +8,26 @@ namespace esercitazioniFunzioni
     {
         static void Main(string[] args)
         {
+
+            {
+                //Scrivi una funzione che data una stringa in ingresso restituisca il numero di vocali di cui è composta
+                int a(string c)
+                {
+                    int f = 0;
+                    string[] r = { "a", "e", "i", "o", "u" };
+                    for (int i = 0; i < c.Length; i++)
+                    {
+                        if (c.)
+                        {
+                            f= f + 1;
+                            
+                        }
+                    }
+                    return f;
+                }
+
+                a("ciao");
+            }
             {
                 void s()
                 {
