@@ -14,10 +14,10 @@ namespace esercitazioniFunzioni
                 int a(string c)
                 {
                     int f = 0;
-                    string[] r = { "a", "e", "i", "o", "u" };
+                    string r = "aeiou";
                     for (int i = 0; i < c.Length; i++)
                     {
-                        if (c.)
+                        if (r.Contains(c[i]))
                         {
                             f= f + 1;
                             
@@ -26,7 +26,8 @@ namespace esercitazioniFunzioni
                     return f;
                 }
 
-                a("ciao");
+               int numerovocali =  a("23a");
+                Console.Write(numerovocali);
             }
             {
                 void s()
