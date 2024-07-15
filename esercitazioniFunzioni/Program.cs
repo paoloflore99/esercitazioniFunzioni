@@ -8,7 +8,30 @@ namespace esercitazioniFunzioni
     {
         static void Main(string[] args)
         {
+            {
+                //Scrivi una funzione che restituisce una serie di Fibonacci.
+                static List<int> Fibonacci(int n , int v)
+                { 
+                    List<int> dati = new List<int>();
+                    dati.Add(n);//1
+                    int o;
+                    o = n + n;
+                    dati.Add(o);//2
+                    o = o + n;
+                    dati.Add(o);//3
+                    o = o + 
+                    for (int i = 0; i < v; i++)
+                    {
+                        
+                    }
 
+                    
+                return dati;
+                }
+                List<int> d = Fibonacci(1 , 10);
+
+
+            }
             {
                 //Scrivi una funzione che data una stringa in ingresso restituisca il numero di vocali di cui è composta
                 int a(string c)
@@ -26,7 +49,7 @@ namespace esercitazioniFunzioni
                     return f;
                 }
 
-               int numerovocali =  a("23a");
+                int numerovocali = a("23a");
                 Console.Write(numerovocali);
             }
             {
