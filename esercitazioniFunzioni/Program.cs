@@ -19,7 +19,7 @@ namespace esercitazioniFunzioni
                     dati.Add(o);//2
                     o = o + n;
                     dati.Add(o);//3
-                    o = o + 
+                    
                     for (int i = 0; i < v; i++)
                     {
                         
