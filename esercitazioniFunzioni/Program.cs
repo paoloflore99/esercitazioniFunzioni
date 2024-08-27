@@ -9,6 +9,9 @@ namespace esercitazioniFunzioni
         static void Main(string[] args)
         {
             {
+                {
+
+                }
                 //Scrivi una funzione che restituisce una serie di Fibonacci.
                 static List<int> Fibonacci(int n , int v)
                 { 
