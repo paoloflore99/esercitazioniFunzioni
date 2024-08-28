@@ -16,23 +16,23 @@ namespace esercitazioniFunzioni
                 static List<int> Fibonacci(int n , int v)
                 { 
                     List<int> dati = new List<int>();
-                    dati.Add(n);//1
-                    int o;
-                    o = n + n;
-                    dati.Add(o);//2
-                    o = o + n;
-                    dati.Add(o);//3
-                    
-                    for (int i = 0; i < v; i++)
+                    dati.Add(0);
+                    dati.Add(1);
+
+                    for (int i = 2; i < v; i++)
                     {
-                        
+                        int o = dati[i - 1] + dati[i - 2]; //Somma degli ultimi due numeri nella lista
+                        dati.Add(o); //Aggiungi il risultato alla lista
                     }
 
-                    
-                return dati;
+
+                    return dati;
                 }
                 List<int> d = Fibonacci(1 , 10);
-
+                foreach (int num in d)
+                {
+                    Console.WriteLine(num);
+                }
 
             }
             {
