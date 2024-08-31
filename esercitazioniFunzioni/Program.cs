@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 using System.Runtime.Serialization.Formatters;
 
 namespace esercitazioniFunzioni
@@ -10,6 +12,9 @@ namespace esercitazioniFunzioni
         {
             {
                 {
+                    //Scrivi una funzione che prende una stringa come input e restituisce la versione
+                    //"invertita" della stringa. La funzione non deve usare alcuna funzione integrata
+                    //per invertire la stringa, ma deve farlo manualmente, carattere per carattere.
 
                 }
                 //Scrivi una funzione che restituisce una serie di Fibonacci.
