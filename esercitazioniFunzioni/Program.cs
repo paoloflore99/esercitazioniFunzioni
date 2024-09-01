@@ -12,9 +12,20 @@ namespace esercitazioniFunzioni
         {
             {
                 {
-                    //Scrivi una funzione che prende una stringa come input e restituisce la versione
-                    //"invertita" della stringa. La funzione non deve usare alcuna funzione integrata
-                    //per invertire la stringa, ma deve farlo manualmente, carattere per carattere.
+                    //Scrivi una funzione che prende una stringa come input e restituisce la versione  "invertita" della stringa.
+
+                    string inverti(string frase) 
+                    {
+                        
+                        string p = "";
+                        for (int i = 0; i < frase.Length; i++)
+                        {
+                           p += frase[frase.Length - 1-  i] ;
+                        }
+                        return p;
+                    }
+                    string frase = "ciao mondo";
+                    Console.WriteLine(inverti(frase));
 
                 }
                 //Scrivi una funzione che restituisce una serie di Fibonacci.
