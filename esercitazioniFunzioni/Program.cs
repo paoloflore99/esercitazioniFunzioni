@@ -12,6 +12,9 @@ namespace esercitazioniFunzioni
         {
             {
                 {
+                    // Verifica se una parola è un palindromo
+                }
+                {
                     //Scrivi una funzione che prende una stringa come input e restituisce la versione  "invertita" della stringa.
 
                     string inverti(string frase) 
@@ -20,11 +23,13 @@ namespace esercitazioniFunzioni
                         string p = "";
                         for (int i = 0; i < frase.Length; i++)
                         {
-                           p += frase[frase.Length - 1-  i] ;
+                           p += frase[frase.Length - 1 - i] ;
                         }
                         return p;
                     }
-                    string frase = "ciao mondo";
+                    Console.WriteLine("Inserisci una parola o frase da invertire");
+
+                    string frase =Console.ReadLine();
                     Console.WriteLine(inverti(frase));
 
                 }
