@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization.Formatters;
@@ -13,6 +14,37 @@ namespace esercitazioniFunzioni
             {
                 {
                     // Verifica se una parola è un palindromo
+                    bool palindromo(string frase)
+                    {
+                        string fraseMinuscola = frase.ToLower();
+                        string controllo = "";
+                        for (int i = 0; i < fraseMinuscola.Length; i++)
+                        {
+                            controllo += fraseMinuscola[fraseMinuscola.Length - 1 - i];
+                        }
+
+                        if (controllo == fraseMinuscola)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+
+                    }
+
+                    Console.WriteLine("inserisci una parola");
+                    string frase = Console.ReadLine();
+                    bool verifica = palindromo(frase);
+                    if (verifica == true)
+                    {
+                        Console.WriteLine("la parola e palindroma");
+                    }
+                    else
+                    {
+                        Console.WriteLine("la parola non e palindroma");
+                    }
                 }
                 {
                     //Scrivi una funzione che prende una stringa come input e restituisce la versione  "invertita" della stringa.
