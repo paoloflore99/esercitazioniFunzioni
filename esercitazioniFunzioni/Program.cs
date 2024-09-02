@@ -13,6 +13,10 @@ namespace esercitazioniFunzioni
         {
             {
                 {
+                    {
+                        // Hai un array di numeri interi e un numero target.Scrivi un programma in
+                        // .NET che trovi tutte le coppie di numeri nell'array la cui somma sia uguale al numero target.
+                    }
                     // Verifica se una parola è un palindromo
                     bool palindromo(string frase)
                     {
